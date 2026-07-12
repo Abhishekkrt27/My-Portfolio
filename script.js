@@ -799,3 +799,4 @@ document.addEventListener('DOMContentLoaded', () => {
     } catch (e) { console.warn('Section 9 (Contact) error:', e); }
 
 });
+
