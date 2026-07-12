@@ -2110,7 +2110,7 @@ h6 {
 
     .character-container {
         width: 155px;
-        left: 10px;
+        left: 0px;
         bottom: -10px;
         z-index: 10;
     }
