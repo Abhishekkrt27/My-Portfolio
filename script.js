@@ -798,5 +798,29 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     } catch (e) { console.warn('Section 9 (Contact) error:', e); }
 
-});
+    // ==========================================================================
+    // 10. Dynamic iPhone Mockup Clock
+    // ==========================================================================
+    try {
+        function updateIphoneClock() {
+            const clocks = document.querySelectorAll('.iphone-time');
+            if (clocks.length === 0) return;
+            
+            const now = new Date();
+            let hours = now.getHours();
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const ampm = hours >= 12 ? 'PM' : 'AM';
+            
+            hours = hours % 12;
+            hours = hours ? hours : 12;
+            
+            const timeString = `${hours}:${minutes} ${ampm}`;
+            clocks.forEach(clock => {
+                clock.textContent = timeString;
+            });
+        }
+        updateIphoneClock();
+        setInterval(updateIphoneClock, 30000);
+    } catch (e) { console.warn('Section 10 (iPhone Clock) error:', e); }
 
+});
