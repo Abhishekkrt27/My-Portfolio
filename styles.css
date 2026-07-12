@@ -2160,17 +2160,25 @@ h6 {
     }
 
     .header {
-        width: calc(100% - 2rem);
-        padding: 0 1.2rem;
-        background: transparent;
+        position: fixed;
+        top: 0;
+        left: 0;
+        transform: none;
+        width: 100%;
+        height: 5.5rem;
+        padding: 0 1.5rem;
+        background: var(--bg-primary);
         border: none;
+        border-radius: 0;
         box-shadow: none;
         backdrop-filter: none;
         -webkit-backdrop-filter: none;
     }
 
     .header.scrolled {
-        background: transparent;
+        top: 0;
+        height: 5.5rem;
+        background: var(--bg-primary);
         border-color: transparent;
         box-shadow: none;
     }
