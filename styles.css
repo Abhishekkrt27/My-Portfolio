@@ -2110,14 +2110,14 @@ h6 {
 
     .character-container {
         width: 155px;
-        left: -5px;
+        left: -15px;
         bottom: -10px;
         z-index: 10;
     }
 
     .iphone-mockup {
         position: absolute;
-        right: 5;
+        right: 0;
         bottom: 0;
         width: 215px;
         height: 350px;
