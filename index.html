@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar Thakur | Designer & Developer Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Abhishek Kumar Thakur - a creative UI/UX designer and core software developer specializing in C++, DSA, Web Technologies, and Machine Learning.">
+    <meta name="keywords"
+        content="Abhishek Kumar Thakur, abhishekkrt27, UI/UX Designer, Web Developer, C++ Developer, DSA, Machine Learning, Portfolio">
+    <meta name="author" content="Abhishek Kumar Thakur">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhishek Kumar Thakur | Designer & Developer">
+    <meta property="og:description"
+        content="Portfolio of Abhishek Kumar Thakur - showcasing the intersection of visual design and high-performance engineering.">
+    <meta property="og:url" content="https://github.com/Abhishekkrt27">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Abhishek Kumar Thakur | Designer & Developer">
+    <meta property="twitter:description"
+        content="Explore projects spanning C++, DSA, Machine Learning, and Web UI/UX Design.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Dynamic Particle Background -->
+    <div id="canvas-container">
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- Glassmorphic Header -->
+    <header class="header">
+        <div class="logo">
+            <a href="#home">A<span>T</span>.</a>
+        </div>
+        <nav class="navbar">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#skills" class="nav-link">Skills</a>
+            <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <a href="https://www.linkedin.com/in/abhishekkrt27/" target="_blank" rel="noopener noreferrer"
+                class="btn btn-nav-cta">
+                <span>Hire Me</span>
+            </a>
+            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <section id="home" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-grid">
+                    <!-- Left Side: Content Text -->
+                    <div class="hero-text-side">
+                        <div class="hero-tagline">
+                            <span class="tag-accent">HELLO, WORLD! I'M</span>
+                        </div>
+                        <h1 class="hero-title">ABHISHEK KUMAR <span class="gradient-text">THAKUR</span></h1>
+                        <h2 class="hero-subtitle">
+                            <span class="typed-text"></span><span class="cursor-blink">|</span>
+                        </h2>
+                        <p class="hero-description">
+                            Designing visual journeys and engineering highly efficient systems. Specializing in UI/UX
+                            Design,
+                            C++, DSA, and Machine Learning.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>Explore Work <i class="fa-solid fa-arrow-down"></i></span>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Get in Touch</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Graphic Visual (Abhishek PNG + iPhone Mockup) -->
+                    <div class="hero-visual-side">
+                        <div class="hero-visual-wrapper">
+                            <!-- Standing Character -->
+                            <div class="character-container">
+                                <img src="assets/abhishek.png" class="character-img" alt="Abhishek Kumar Thakur">
+                            </div>
+                            <!-- iPhone Mockup -->
+                            <div class="iphone-mockup">
+                                <div class="iphone-notch"></div>
+                                <div class="iphone-screen">
+                                    <div class="iphone-header">
+                                        <span class="iphone-time">8:54 PM</span>
+                                        <div class="iphone-icons">
+                                            <i class="fa-solid fa-signal"></i>
+                                            <i class="fa-solid fa-wifi"></i>
+                                            <i class="fa-solid fa-battery-three-quarters"></i>
+                                        </div>
+                                    </div>
+                                    <div class="iphone-content">
+                                        <div class="iphone-avatar-wrapper">
+                                            <div class="iphone-avatar-bg">
+                                                <img src="assets/abhishek.png" class="iphone-avatar-img" alt="Avatar">
+                                            </div>
+                                        </div>
+                                        <h3 class="iphone-name">Abhishek Kumar Thakur</h3>
+                                        <span class="iphone-tag">Developer &amp; Designer</span>
+                                        <p class="iphone-desc">Building premium digital interfaces and clean, attractive
+                                            design and developing.</p>
+                                        <a href="#contact" class="iphone-cta">Hire Me <i
+                                                class="fa-solid fa-arrow-right"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <div class="about-header">
+                    <h2 class="about-title">About Me</h2>
+                    <div class="about-underline"></div>
+                </div>
+
+                <div class="about-card">
+                    <div class="about-card-left">
+                        <h3 class="about-card-subtitle">Design-Focused Developer &amp; ML Engineer</h3>
+                        <p class="about-card-text">
+                            I'm Abhishek Kumar Thakur, a 3rd-year BTech CSE student with a strong passion for UI design,
+                            C++ development, and machine learning models. My goal is to bridge the gap between creative
+                            visual thinking and high-performance technical engineering to build intuitive, clean, and
+                            user-centered digital systems.
+                        </p>
+                        <p class="about-card-text">
+                            I enjoy learning fast, building robust algorithms in C++, solving challenging data structure
+                            problems, and implementing slick user interfaces. My strengths lie in both logical backend
+                            optimization and pixel-perfect front-end craftsmanship.
+                        </p>
+                    </div>
+                    <div class="about-card-right">
+                        <div class="about-meta-pill">
+                            <span class="meta-label">EDUCATION</span>
+                            <span class="meta-value">BTech CSE – 3rd Year</span>
+                        </div>
+                        <div class="about-meta-pill">
+                            <span class="meta-label">STRENGTH</span>
+                            <span class="meta-value">C, C++ &amp; Python Developer</span>
+                        </div>
+                        <div class="about-meta-pill">
+                            <span class="meta-label">GOAL</span>
+                            <span class="meta-value">Aspiring Data Scientist &amp; Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section (SWAPPED to be above Skills) -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02 / CREATIVE WORK</span>
+                    <h2 class="section-title">Selected Works</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <!-- Coding Projects Subsection -->
+                <div class="projects-subsection">
+                    <h3 class="subsection-title"><i class="fa-solid fa-code"></i> Development & Engineering</h3>
+                    <p class="subsection-desc">Algorithmic platforms and core applications built with optimization, data
+                        structures, and web components.</p>
+
+                    <div class="projects-grid">
+                        <!-- Project 1 (AlumniConnect) -->
+                        <div class="project-card" data-category="dev">
+                            <div class="project-img-wrapper">
+                                <img src="assets/alumni.jpg" alt="AlumniConnect Portal Thumbnail"
+                                    class="project-thumb-img">
+                                <div class="project-overlay">
+                                    <span class="btn-project-action">Explore Project <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Development / Connection</span>
+                                <h3>AlumniConnect Portal</h3>
+                                <p class="project-brief">A full-stack mentorship collaboration hub connecting university
+                                    alumni and students under one layout.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>JavaScript</span>
+                                    <span>Node.js</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 (Algorithm Engine) -->
+                        <div class="project-card" data-category="dev">
+                            <div class="project-img-wrapper">
+                                <img src="assets/algo.jpg" alt="Algorithm Engine Visualizer Thumbnail"
+                                    class="project-thumb-img">
+                                <div class="project-overlay">
+                                    <span class="btn-project-action">Explore Project <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Development / DSA</span>
+                                <h3>Algorithm Engine Visualizer</h3>
+                                <p class="project-brief">A graphical rendering sandbox showcasing pathfinding, sorting,
+                                    and core structure patterns.</p>
+                                <div class="project-tech">
+                                    <span>C++ Logic</span>
+                                    <span>Canvas API</span>
+                                    <span>Data Structures</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 (Fintech Dashboard) -->
+                        <div class="project-card" data-category="dev">
+                            <div class="project-img-wrapper">
+                                <img src="assets/fintech.jpg" alt="Fintech Analytics Dashboard Thumbnail"
+                                    class="project-thumb-img">
+                                <div class="project-overlay">
+                                    <span class="btn-project-action">Explore Project <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Development / Finance</span>
+                                <h3>Fintech Analytics Dashboard</h3>
+                                <p class="project-brief">A high-performance dashboard featuring real-time data tracking,
+                                    security metrics, and interactive widgets.</p>
+                                <div class="project-tech">
+                                    <span>React.js</span>
+                                    <span>D3.js</span>
+                                    <span>Chart.js</span>
+                                    <span>Tailwind CSS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4 (Editorial Portfolio) -->
+                        <div class="project-card" data-category="dev">
+                            <div class="project-img-wrapper">
+                                <img src="assets/editorial.jpg" alt="Premium Editorial Portfolio Thumbnail"
+                                    class="project-thumb-img">
+                                <div class="project-overlay">
+                                    <span class="btn-project-action">Explore Project <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Development / UI/UX</span>
+                                <h3>Premium Editorial Portfolio</h3>
+                                <p class="project-brief">A content-focused editorial layout optimized for readability,
+                                    responsive spacing, and smooth transitions.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>GSAP</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5 (Brand Identity) -->
+                        <div class="project-card" data-category="dev">
+                            <div class="project-img-wrapper">
+                                <img src="assets/brand.jpg" alt="Brand Identity Landing Page Thumbnail"
+                                    class="project-thumb-img">
+                                <div class="project-overlay">
+                                    <span class="btn-project-action">Explore Project <i
+                                            class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-tag">Development / E-Commerce</span>
+                                <h3>Brand Identity Landing Page</h3>
+                                <p class="project-brief">A luxury cosmetics landing page showing product catalog grids,
+                                    interactive filters, and sleek checkout flows.</p>
+                                <div class="project-tech">
+                                    <span>HTML5</span>
+                                    <span>CSS3</span>
+                                    <span>WebGL</span>
+                                    <span>JavaScript</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Design Projects Subsection (SWIPEABLE AUTO-ROLLING CAROUSEL - 10 DESIGN IMAGES) -->
+                <div class="projects-subsection design-showcase-subsection">
+                    <h3 class="subsection-title"><i class="fa-solid fa-palette"></i> Design Projects</h3>
+                    <div class="swiper-container-outer">
+                        <div class="swiper-container" id="design-swiper">
+                            <div class="swiper-wrapper">
+
+                                <!-- Design Card 0 (Earbuds) -->
+                                <div class="swiper-slide design-card" data-project-id="design0">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design0.jpg" alt="Design Project 0">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 1 (Viper Car Movie Poster) -->
+                                <div class="swiper-slide design-card" data-project-id="design1">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design1.png" alt="Design Project 1">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 2 (Startups vs Small Business Infographic) -->
+                                <div class="swiper-slide design-card" data-project-id="design2">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design2.png" alt="Design Project 2">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 3 -->
+                                <div class="swiper-slide design-card" data-project-id="design3">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design3.png" alt="Design Project 3">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 4 -->
+                                <div class="swiper-slide design-card" data-project-id="design4">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design4.png" alt="Design Project 4">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 5 -->
+                                <div class="swiper-slide design-card" data-project-id="design5">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design5.png" alt="Design Project 5">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 6 -->
+                                <div class="swiper-slide design-card" data-project-id="design6">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design6.png" alt="Design Project 6">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 7 -->
+                                <div class="swiper-slide design-card" data-project-id="design7">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design7.jpeg" alt="Design Project 7">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 8 -->
+                                <div class="swiper-slide design-card" data-project-id="design8">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design8.jpeg" alt="Design Project 8">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 9 -->
+                                <div class="swiper-slide design-card" data-project-id="design9">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design9.jpg" alt="Design Project 9">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Swiper UI navigation controls -->
+                        <div class="swiper-nav-bar">
+                            <button class="swiper-nav-btn prev-btn" aria-label="Previous card"><i
+                                    class="fa-solid fa-chevron-left"></i></button>
+                            <div class="swiper-dots-container"></div>
+                            <button class="swiper-nav-btn next-btn" aria-label="Next card"><i
+                                    class="fa-solid fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03 / CAPABILITIES</span>
+                    <h2 class="section-title">Skills & Tools</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="skills-logo-grid">
+
+                    <!-- HTML5 -->
+                    <div class="skill-logo-card">
+                        <div class="icon-wrapper">
+                            <i class="devicon-html5-plain colored"></i>
+                        </div>
+                        <span>HTML</span>
+                    </div>
+
+                    <!-- CSS3 -->
+                    <div class="skill-logo-card">
+                        <div class="icon-wrapper">
+                            <i class="devicon-css3-plain colored"></i>
+                        </div>
+                        <span>CSS</span>
+                    </div>
+
+                    <!-- C -->
+                    <div class="skill-logo-card">
+                        <div class="icon-wrapper">
+                            <i class="devicon-c-plain colored"></i>
+                        </div>
+                        <span>C</span>
+                    </div>
+
+                    <!-- C++ -->
+                    <div class="skill-logo-card">
+                        <div class="icon-wrapper">
+                            <i class="devicon-cplusplus-plain colored"></i>
+                        </div>
+                        <span>C++</span>
+                    </div>
+
+                    <!-- Python -->
+                    <div class="skill-logo-card">
+                        <div class="icon-wrapper">
+                            <i class="devicon-python-plain colored"></i>
+                        </div>
+                        <span>Python</span>
+                    </div>
+
+                    <!-- Figma -->
+                    <div class="skill-logo-card">
+                        <div class="icon-wrapper">
+                            <i class="devicon-figma-plain colored"></i>
+                        </div>
+                        <span>Figma</span>
+                    </div>
+
+                    <!-- GitHub -->
+                    <div class="skill-logo-card">
+                        <div class="icon-wrapper">
+                            <i class="devicon-github-original colored"></i>
+                        </div>
+                        <span>GitHub</span>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04 / GET IN TOUCH</span>
+                    <h2 class="section-title">Start a Conversation</h2>
+                    <div class="section-underline"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Left Contact Info -->
+                    <div class="contact-info-panel">
+                        <h3>Let's build something exceptional.</h3>
+                        <p class="contact-intro">
+                            Whether you want to discuss a software project, hire me for UI/UX strategy, or talk about
+                            complex data algorithms—feel free to drop a message.
+                        </p>
+
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="detail-content">
+                                    <a href="mailto:abhishekkrt27@gmail.com">Email Me</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="detail-content">
+                                    <a href="https://www.linkedin.com/in/abhishekkrt27/" target="_blank"
+                                        rel="noopener noreferrer">LinkedIn</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i class="fa-brands fa-github"></i></div>
+                                <div class="detail-content">
+                                    <a href="https://github.com/Abhishekkrt27" target="_blank"
+                                        rel="noopener noreferrer">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Form -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="contact-form">
+                            <!-- Web3Forms Access Key -->
+                            <input type="hidden" name="access_key" value="23ca1151-a8b9-4d80-8dc5-b0cb11a096c6">
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <input type="text" id="form-name" name="name" required placeholder=" ">
+                                    <label for="form-name">Your Name</label>
+                                    <span class="bar"></span>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="form-email" name="email" required placeholder=" ">
+                                    <label for="form-email">Your Email</label>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" id="form-subject" name="subject" required placeholder=" ">
+                                <label for="form-subject">Subject</label>
+                                <span class="bar"></span>
+                            </div>
+                            <div class="input-group">
+                                <textarea id="form-message" name="message" required placeholder=" " rows="5"></textarea>
+                                <label for="form-message">Tell me about your project...</label>
+                                <span class="bar"></span>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message <i class="fa-regular fa-paper-plane"></i></span>
+                            </button>
+                            <div id="form-status" class="form-status-message"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">A<span>T</span>.</div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Abhishekkrt27" target="_blank" aria-label="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishekkrt27/" target="_blank" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abhishek Kumar Thakur. All rights reserved.</p>
+                <p class="footer-credit">Designed & Engineered with Passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coding Projects Modals Container -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-wrapper">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content">
+                <!-- Content injected dynamically by JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Overlay (For Design Projects) -->
+    <div id="image-lightbox" class="lightbox-overlay">
+        <div class="lightbox-wrapper">
+            <button class="lightbox-close" aria-label="Close image"><i class="fa-solid fa-xmark"></i></button>
+            <div class="lightbox-img-container">
+                <img src="" alt="Zoomed Design Poster" class="lightbox-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
