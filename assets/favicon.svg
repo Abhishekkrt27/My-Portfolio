@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@800&amp;display=swap');
+      .logo-text {
+        font-family: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 20px;
+        font-weight: 800;
+      }
+    </style>
+  </defs>
+  <text x="1" y="23" class="logo-text" fill="#0A2947">A<tspan fill="#8B5E3C">T</tspan><tspan fill="#8B5E3C">.</tspan></text>
+</svg>
