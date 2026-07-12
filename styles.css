@@ -2162,37 +2162,58 @@ h6 {
     .header {
         width: calc(100% - 2rem);
         padding: 0 1.2rem;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    }
+
+    .header.scrolled {
+        background: transparent;
+        border-color: transparent;
+        box-shadow: none;
     }
 
     .mobile-nav-toggle {
         display: block;
+        z-index: 101; /* Ensure hamburger/close stays on top of fullscreen menu */
     }
 
     .navbar {
-        position: absolute;
-        top: calc(100% + 0.8rem);
+        position: fixed;
+        top: 0;
         left: 0;
         width: 100%;
-        background: rgba(245, 245, 243, 0.45);
-        border: none;
-        border-radius: var(--radius-md);
+        height: 100vh;
+        background: var(--bg-primary); /* solid warm cream background matching theme */
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         padding: 2.5rem;
-        gap: 1.8rem;
+        gap: 2rem;
         opacity: 0;
         pointer-events: none;
-        transform: translateY(-20px);
-        transition: var(--transition-smooth);
-        backdrop-filter: blur(15px);
-        -webkit-backdrop-filter: blur(15px);
+        transform: translateY(-50px);
+        transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 99;
+        border: none;
         box-shadow: none;
+        border-radius: 0;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     }
 
     .navbar.active {
         opacity: 1;
         pointer-events: auto;
         transform: translateY(0);
+    }
+
+    .navbar .nav-link {
+        font-size: 1.45rem;
+        font-weight: 700;
+        color: var(--text-primary);
     }
 
     .header-actions .btn-nav-cta {
@@ -2202,8 +2223,9 @@ h6 {
     .navbar .btn-nav-cta {
         display: inline-flex;
         width: auto;
-        margin-top: 0.5rem;
-        padding: 0.6rem 2.2rem;
+        margin-top: 1rem;
+        padding: 0.8rem 2.5rem;
+        font-size: 1rem;
     }
 
 
