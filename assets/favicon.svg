@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&amp;display=swap');
+      .logo-text {
+        font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+        font-size: 17px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+      }
+    </style>
+  </defs>
+  <!-- Base Squircle with Crimson Red Accent Border -->
+  <rect width="32" height="32" rx="7" fill="#0B0F19"/>
+  <rect x="0.75" y="0.75" width="30.5" height="30.5" rx="6.25" fill="none" stroke="#E50914" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="16" y="22" text-anchor="middle" class="logo-text" fill="#FFFFFF">A<tspan fill="#E50914">T</tspan><tspan fill="#E50914">.</tspan></text>
+</svg>
