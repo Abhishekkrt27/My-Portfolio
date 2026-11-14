@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhishek Kumar Thakur | Developer &amp; UI/UX Creator</title>
+    <meta name="description"
+        content="Portfolio of Abhishek Kumar Thakur - a creative UI/UX designer and core software developer specializing in C++, DSA, Web Technologies, and Machine Learning.">
+    <meta name="keywords"
+        content="Abhishek Kumar Thakur, abhishekkrt27, UI/UX Designer, Web Developer, C++ Developer, DSA, Machine Learning, Portfolio">
+    <meta name="author" content="Abhishek Kumar Thakur">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Abhishek Kumar Thakur | Developer &amp; UI/UX Creator">
+    <meta property="og:description"
+        content="Portfolio of Abhishek Kumar Thakur - showcasing the intersection of visual design and high-performance engineering.">
+    <meta property="og:url" content="https://github.com/Abhishekkrt27">
+
+    <!-- Google Fonts: Bebas Neue (Editorial Display), Caveat (Signature Script), Plus Jakarta Sans (Modern Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Devicon Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Dynamic Particle Background -->
+    <div id="canvas-container">
+        <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- Editorial Header / Top Bar -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <span class="header-role-badge">CORE DEVELOPER</span>
+                <span class="header-role-sub">UI/UX CREATOR</span>
+            </div>
+
+            <div class="logo">
+                <a href="#home">A<span class="red-accent">T</span>.</a>
+            </div>
+
+            <nav class="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About &amp; Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn-freelance-status">
+                    <span class="status-dot"></span>
+                    <span>AVAILABLE FOR FREELANCE</span>
+                    <span class="sparkle-icon">✦</span>
+                </a>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+
+        <!-- ================================================================= -->
+        <!-- HERO SECTION (Editorial White + Crimson Red Magazine Layout)       -->
+        <!-- ================================================================= -->
+        <section id="home" class="hero-section">
+            <div class="hero-watermark-wrapper" aria-hidden="true">
+                <svg class="hero-svg-watermark" viewBox="0 0 1600 520" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="portfolioRedWhiteGrad" x1="0" y1="0" x2="0" y2="100%">
+                            <stop offset="0%" stop-color="#E50914" />
+                            <stop offset="25%" stop-color="#E50914" />
+                            <stop offset="55%" stop-color="#EB2B38" />
+                            <stop offset="82%" stop-color="#FFA4A9" />
+                            <stop offset="97%" stop-color="#FFFFFF" />
+                        </linearGradient>
+                    </defs>
+                    <text x="50%" y="470" text-anchor="middle" font-family="'Bebas Neue', 'Impact', sans-serif" font-weight="900" font-size="520" fill="url(#portfolioRedWhiteGrad)" textLength="1600" lengthAdjust="spacingAndGlyphs">PORTFOLIO</text>
+                </svg>
+            </div>
+
+            <div class="container hero-container">
+                <div class="hero-layout">
+
+                    <!-- Left: Bio & Personal Branding -->
+                    <div class="hero-left-col">
+                        <div class="hero-script-greeting">Hello, I'm</div>
+                        <h1 class="hero-display-name">
+                            <span class="name-line">ABHISHEK</span>
+                            <span class="name-line">THAKUR</span>
+                        </h1>
+
+                        <div class="hero-role-block">
+                            <span class="role-tag">WEB DESIGNER &amp;<br>UI/UX CREATOR</span>
+                            <div class="typing-container">
+                                <span class="typed-text"></span><span class="cursor-blink">|</span>
+                            </div>
+                        </div>
+
+                        <p class="hero-bio-para">
+                            I design and build stylish, user-focused web experiences that combine creativity with
+                            core software engineering. Passionate about clean design, robust C++ algorithms, smooth
+                            interactions, and details that make a difference.
+                        </p>
+
+                        <div class="hero-availability-tag">
+                            <span class="globe-icon"><i class="fa-solid fa-earth-americas"></i></span>
+                            <span>AVAILABLE WORLDWIDE</span>
+                        </div>
+
+                        <div class="hero-cta-group">
+                            <a href="#projects" class="btn btn-primary">
+                                <span>Explore Projects <i class="fa-solid fa-arrow-down"></i></span>
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <span>Get in Touch <i class="fa-solid fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Center: Charismatic Portrait (Abhishek in black hoodie, arms crossed) -->
+                    <div class="hero-center-col">
+                        <div class="hero-portrait-stage">
+                            <div class="portrait-radial-glow"></div>
+                            <img src="assets/Abhishekkrt.png" class="hero-portrait-photo"
+                                alt="Abhishek Kumar Thakur - Developer &amp; Designer">
+                        </div>
+                    </div>
+
+                    <!-- Right: Vision Badge -->
+                    <div class="hero-right-col">
+                        <div class="hero-vision-badge">
+                            <div class="vision-star-circle">✦</div>
+                            <div class="vision-text-lines">
+                                <span>Turning ideas</span>
+                                <span>into powerful</span>
+                                <span>digital experiences.</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- SELECTED PROJECTS (Exact Reference Numbered 01, 02, 03... Layout) -->
+        <!-- ================================================================= -->
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+
+                <div class="projects-bar-header">
+                    <div class="bar-left">
+                        <span class="section-micro-num">01 / CREATIVE WORK</span>
+                        <h2 class="section-editorial-title">SELECTED PROJECTS</h2>
+                    </div>
+                    <div class="bar-right">
+                        <a href="https://github.com/Abhishekkrt27" target="_blank" rel="noopener noreferrer"
+                            class="view-all-link">
+                            <span>VIEW ALL PROJECTS</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Development Projects Row (Click to open detailed modal) -->
+                <div class="editorial-projects-grid">
+
+                    <!-- Project 1 (AlumniConnect) -->
+                    <div class="project-card editorial-card" data-category="dev">
+                        <div class="project-img-wrapper">
+                            <img src="assets/alumni.jpg" alt="AlumniConnect Portal Thumbnail" class="project-thumb-img">
+                            <div class="project-overlay">
+                                <span class="btn-project-action">Explore Project <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                        <div class="editorial-card-footer">
+                            <div class="editorial-num">01</div>
+                            <div class="editorial-meta">
+                                <h3 class="editorial-title">ALUMNICONNECT PORTAL</h3>
+                                <span class="editorial-subtitle">MENTORSHIP &amp; COLLABORATION HUB</span>
+                            </div>
+                            <div class="editorial-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 (Algorithm Engine) -->
+                    <div class="project-card editorial-card" data-category="dev">
+                        <div class="project-img-wrapper">
+                            <img src="assets/algo.jpg" alt="Algorithm Engine Visualizer Thumbnail"
+                                class="project-thumb-img">
+                            <div class="project-overlay">
+                                <span class="btn-project-action">Explore Project <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                        <div class="editorial-card-footer">
+                            <div class="editorial-num">02</div>
+                            <div class="editorial-meta">
+                                <h3 class="editorial-title">ALGORITHM ENGINE VISUALIZER</h3>
+                                <span class="editorial-subtitle">C++ LOGIC &amp; DSA GENERATOR</span>
+                            </div>
+                            <div class="editorial-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 (Fintech Dashboard) -->
+                    <div class="project-card editorial-card" data-category="dev">
+                        <div class="project-img-wrapper">
+                            <img src="assets/fintech.jpg" alt="Fintech Analytics Dashboard Thumbnail"
+                                class="project-thumb-img">
+                            <div class="project-overlay">
+                                <span class="btn-project-action">Explore Project <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                        <div class="editorial-card-footer">
+                            <div class="editorial-num">03</div>
+                            <div class="editorial-meta">
+                                <h3 class="editorial-title">FINTECH ANALYTICS DASHBOARD</h3>
+                                <span class="editorial-subtitle">FINANCE &amp; REAL-TIME METRICS</span>
+                            </div>
+                            <div class="editorial-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Editorial Portfolio) -->
+                    <div class="project-card editorial-card" data-category="dev">
+                        <div class="project-img-wrapper">
+                            <img src="assets/editorial.jpg" alt="Premium Editorial Portfolio Thumbnail"
+                                class="project-thumb-img">
+                            <div class="project-overlay">
+                                <span class="btn-project-action">Explore Project <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                        <div class="editorial-card-footer">
+                            <div class="editorial-num">04</div>
+                            <div class="editorial-meta">
+                                <h3 class="editorial-title">PREMIUM EDITORIAL PORTFOLIO</h3>
+                                <span class="editorial-subtitle">UI/UX &amp; GSAP MOTION DESIGN</span>
+                            </div>
+                            <div class="editorial-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 5 (Brand Identity) -->
+                    <div class="project-card editorial-card" data-category="dev">
+                        <div class="project-img-wrapper">
+                            <img src="assets/brand.jpg" alt="Brand Identity Landing Page Thumbnail"
+                                class="project-thumb-img">
+                            <div class="project-overlay">
+                                <span class="btn-project-action">Explore Project <i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></span>
+                            </div>
+                        </div>
+                        <div class="editorial-card-footer">
+                            <div class="editorial-num">05</div>
+                            <div class="editorial-meta">
+                                <h3 class="editorial-title">BRAND IDENTITY LANDING PAGE</h3>
+                                <span class="editorial-subtitle">LUXURY COMMERCE &amp; WEBGL</span>
+                            </div>
+                            <div class="editorial-arrow">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Design Showcase Swiper Subsection (10 Swipeable Design Posters) -->
+                <div class="projects-subsection design-showcase-subsection">
+                    <div class="subsection-header-flex">
+                        <div>
+                            <span class="sub-category-tag">VISUAL ARCHIVE</span>
+                            <h3 class="subsection-title"><i class="fa-solid fa-palette red-accent"></i> Design
+                                Explorations</h3>
+                        </div>
+                        <span class="swipe-hint">DRAG / SWIPE TO EXPLORE ✦</span>
+                    </div>
+
+                    <div class="swiper-container-outer">
+                        <div class="swiper-container" id="design-swiper">
+                            <div class="swiper-wrapper">
+
+                                <!-- Design Card 0 -->
+                                <div class="swiper-slide design-card" data-project-id="design0">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design0.jpg" alt="Design Project 0">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 1 -->
+                                <div class="swiper-slide design-card" data-project-id="design1">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design1.png" alt="Design Project 1">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 2 -->
+                                <div class="swiper-slide design-card" data-project-id="design2">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design2.png" alt="Design Project 2">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 3 -->
+                                <div class="swiper-slide design-card" data-project-id="design3">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design3.png" alt="Design Project 3">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 4 -->
+                                <div class="swiper-slide design-card" data-project-id="design4">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design4.png" alt="Design Project 4">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 5 -->
+                                <div class="swiper-slide design-card" data-project-id="design5">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design5.png" alt="Design Project 5">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 6 -->
+                                <div class="swiper-slide design-card" data-project-id="design6">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design6.png" alt="Design Project 6">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 7 -->
+                                <div class="swiper-slide design-card" data-project-id="design7">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design7.jpeg" alt="Design Project 7">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 8 -->
+                                <div class="swiper-slide design-card" data-project-id="design8">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design8.jpeg" alt="Design Project 8">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                                <!-- Design Card 9 -->
+                                <div class="swiper-slide design-card" data-project-id="design9">
+                                    <div class="card-img-holder">
+                                        <img src="assets/design9.jpg" alt="Design Project 9">
+                                    </div>
+                                    <div class="shine-sheen"></div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- Swiper Controls -->
+                        <div class="swiper-nav-bar">
+                            <button class="swiper-nav-btn prev-btn" aria-label="Previous card">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <div class="swiper-dots-container"></div>
+                            <button class="swiper-nav-btn next-btn" aria-label="Next card">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- 3-COLUMN BENTO: EDUCATION & SKILLS | WORK PROCESS | QUOTE CARD   -->
+        <!-- ================================================================= -->
+        <section id="about" class="editorial-bento-section section-padding">
+            <div class="container">
+                <div class="bento-three-grid">
+
+                    <!-- Column 1: Education & Skills -->
+                    <div class="bento-col education-skills-col" id="skills">
+                        <div class="col-head">
+                            <span class="micro-badge">02</span>
+                            <h3 class="col-title">EDUCATION &amp; SKILLS</h3>
+                        </div>
+
+                        <!-- Education Block -->
+                        <div class="bento-education-card">
+                            <span class="section-label red-accent">EDUCATION</span>
+                            <div class="edu-item">
+                                <div class="edu-row">
+                                    <span class="edu-degree">B.Tech in Computer Science &amp; Engg.</span>
+                                    <span class="edu-year">2022 – 2026</span>
+                                </div>
+                                <span class="edu-institute">3rd Year CSE Undergraduate</span>
+                            </div>
+                            <div class="edu-item">
+                                <div class="edu-row">
+                                    <span class="edu-degree">UI/UX &amp; Full Stack Architecture</span>
+                                    <span class="edu-year">2023 – 2026</span>
+                                </div>
+                                <span class="edu-institute">Design Systems &amp; Modern Frameworks</span>
+                            </div>
+                        </div>
+
+                        <!-- Skills Pills Grid (with 3D Tilt preserved) -->
+                        <div class="bento-skills-wrapper">
+                            <span class="section-label red-accent">TECHNICAL PROFICIENCIES</span>
+                            <div class="skills-logo-grid">
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-cplusplus-plain colored"></i></div>
+                                    <span>C++</span>
+                                </div>
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-c-plain colored"></i></div>
+                                    <span>C</span>
+                                </div>
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-python-plain colored"></i></div>
+                                    <span>Python</span>
+                                </div>
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-figma-plain colored"></i></div>
+                                    <span>Figma</span>
+                                </div>
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-html5-plain colored"></i></div>
+                                    <span>HTML5</span>
+                                </div>
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-css3-plain colored"></i></div>
+                                    <span>CSS3</span>
+                                </div>
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-javascript-plain colored"></i></div>
+                                    <span>JavaScript</span>
+                                </div>
+                                <div class="skill-logo-card">
+                                    <div class="icon-wrapper"><i class="devicon-github-original colored"></i></div>
+                                    <span>GitHub</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Work Process Timeline -->
+                    <div class="bento-col work-process-col">
+                        <div class="col-head">
+                            <span class="micro-badge">03</span>
+                            <h3 class="col-title">WORK PROCESS</h3>
+                        </div>
+
+                        <div class="process-timeline">
+                            <div class="process-step">
+                                <span class="step-num">01</span>
+                                <div class="step-icon-node">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4 class="step-title">DISCOVER</h4>
+                                    <p class="step-desc">Understanding goals, target audience, technical requirements, and core constraints.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <span class="step-num">02</span>
+                                <div class="step-icon-node">
+                                    <i class="fa-regular fa-lightbulb"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4 class="step-title">IDEATE</h4>
+                                    <p class="step-desc">Planning, wireframing, algorithm architecture, and creating the right user flow.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <span class="step-num">03</span>
+                                <div class="step-icon-node">
+                                    <i class="fa-solid fa-pencil"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4 class="step-title">DESIGN</h4>
+                                    <p class="step-desc">Crafting pixel-perfect visual design with a sharp focus on modern user experience.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <span class="step-num">04</span>
+                                <div class="step-icon-node">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4 class="step-title">DEVELOP</h4>
+                                    <p class="step-desc">Building fast, clean, and highly scalable software with optimized data structures.</p>
+                                </div>
+                            </div>
+
+                            <div class="process-step">
+                                <span class="step-num">05</span>
+                                <div class="step-icon-node">
+                                    <i class="fa-regular fa-paper-plane"></i>
+                                </div>
+                                <div class="step-info">
+                                    <h4 class="step-title">DELIVER</h4>
+                                    <p class="step-desc">Testing, benchmarking performance, and launching with meticulous perfection.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Column 3: Quote & Collaboration Banner -->
+                    <div class="bento-col quote-col">
+                        <div class="quote-card-inner">
+                            <div class="quote-mark">“</div>
+                            <blockquote class="editorial-quote-text">
+                                Good design is not just how it looks, but how it works.
+                            </blockquote>
+                            <div class="quote-signature">Abhishek</div>
+
+                            <div class="quote-card-footer">
+                                <span class="footer-callout">LET'S CREATE SOMETHING GREAT TOGETHER.</span>
+                                <span class="footer-sparkle">✦</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ================================================================= -->
+        <!-- CONTACT SECTION: LET'S WORK TOGETHER (White + Crimson Red Layout) -->
+        <!-- ================================================================= -->
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <div class="contact-editorial-layout">
+
+                    <!-- Left: Contact Details -->
+                    <div class="contact-info-panel">
+                        <span class="section-micro-num">04 / COLLABORATION</span>
+                        <h2 class="contact-display-heading">
+                            LET'S WORK<br>
+                            <span class="red-accent">TOGETHER ✦</span>
+                        </h2>
+                        <p class="contact-intro-para">
+                            I'm currently open for new projects, internships, and collaborative opportunities.
+                            Whether you need robust software engineering, C++ optimization, or high-end UI/UX design—let's
+                            create something exceptional.
+                        </p>
+
+                        <div class="contact-badge-status">
+                            <span class="badge-arrow">→</span>
+                            <span>AVAILABLE FOR FREELANCE &amp; HIRE</span>
+                        </div>
+
+                        <div class="contact-details-list">
+                            <a href="mailto:abhishekkrt27@gmail.com" class="contact-link-row">
+                                <div class="contact-icon-box"><i class="fa-regular fa-envelope"></i></div>
+                                <span class="contact-link-text">abhishekkrt27@gmail.com</span>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/abhishekkrt27/" target="_blank"
+                                rel="noopener noreferrer" class="contact-link-row">
+                                <div class="contact-icon-box"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <span class="contact-link-text">LinkedIn</span>
+                            </a>
+
+                            <a href="https://github.com/Abhishekkrt27" target="_blank" rel="noopener noreferrer"
+                                class="contact-link-row">
+                                <div class="contact-icon-box"><i class="fa-brands fa-github"></i></div>
+                                <span class="contact-link-text">GitHub</span>
+                            </a>
+
+                            <div class="contact-link-row static-row">
+                                <div class="contact-icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                                <span class="contact-link-text">Jamshedpur, Jharkhand</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Web3Forms Contact Form -->
+                    <div class="contact-form-panel">
+                        <div class="form-header-box">
+                            <h3 class="form-title">Send a Message</h3>
+                            <p class="form-desc">I typically respond within 24 hours.</p>
+                        </div>
+
+                        <form id="contact-form" class="contact-form">
+                            <!-- Web3Forms Access Key (Preserved exactly!) -->
+                            <input type="hidden" name="access_key" value="23ca1151-a8b9-4d80-8dc5-b0cb11a096c6">
+
+                            <div class="form-row">
+                                <div class="input-group">
+                                    <input type="text" id="form-name" name="name" required placeholder=" ">
+                                    <label for="form-name">Your Name</label>
+                                    <span class="bar"></span>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" id="form-email" name="email" required placeholder=" ">
+                                    <label for="form-email">Your Email</label>
+                                    <span class="bar"></span>
+                                </div>
+                            </div>
+
+                            <div class="input-group">
+                                <input type="text" id="form-subject" name="subject" required placeholder=" ">
+                                <label for="form-subject">Subject</label>
+                                <span class="bar"></span>
+                            </div>
+
+                            <div class="input-group">
+                                <textarea id="form-message" name="message" required placeholder=" " rows="4"></textarea>
+                                <label for="form-message">Tell me about your project or inquiry...</label>
+                                <span class="bar"></span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-submit">
+                                <span>Send Message <i class="fa-regular fa-paper-plane"></i></span>
+                            </button>
+
+                            <div id="form-status" class="form-status-message"></div>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-logo">A<span class="red-accent">T</span>.</div>
+                <div class="footer-socials">
+                    <a href="https://github.com/Abhishekkrt27" target="_blank" rel="noopener noreferrer"
+                        aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/abhishekkrt27/" target="_blank" rel="noopener noreferrer"
+                        aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Abhishek Kumar Thakur. All rights reserved.</p>
+                <p class="footer-credit">Designed &amp; Engineered with Passion ✦</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Coding Projects Modals Container (Preserved for Modal mechanism!) -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-wrapper">
+            <button class="modal-close" aria-label="Close modal"><i class="fa-solid fa-xmark"></i></button>
+            <div class="modal-content">
+                <!-- Content injected dynamically by script.js -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Image Lightbox Overlay (Preserved for Design Swiper Lightbox!) -->
+    <div id="image-lightbox" class="lightbox-overlay">
+        <div class="lightbox-wrapper">
+            <button class="lightbox-close" aria-label="Close image"><i class="fa-solid fa-xmark"></i></button>
+            <div class="lightbox-img-container">
+                <img src="" alt="Zoomed Design Poster" class="lightbox-img">
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
